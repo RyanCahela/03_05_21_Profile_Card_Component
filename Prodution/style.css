@@ -1,18 +1,15 @@
 :root {
   --mobile-width: 375px;
-  --desktop-widt: 1440px;
-
+  --desktop-width: 1440px;
   /*Colors*/
   --dark-cyan: hsl(185, 75%, 39%);
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --dark-greyish-blue: hsl(227, 10%, 46%);
   --dark-grey: hsl(0, 0%, 59%);
-
   /*Typography*/
   --name-and-stats-font-size: 18px;
   --light-font-weight: 400;
   --bold-folt-weight: 700;
-
   /*Sizes*/
   --ratio: 1.5;
   --s-5: calc(var(--s-4) / var(--ratio));
@@ -29,8 +26,7 @@
   --background-circle-radius: 80vw;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,7 +56,6 @@ body {
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
-  border: 1px solid greenyellow;
   height: var(--background-circle-radius);
   width: var(--background-circle-radius);
 }
@@ -76,7 +71,6 @@ body {
   bottom: 0;
   right: 0;
   transform: translate(50%, 50%);
-  border: 1px solid red;
 }
 
 .card {
@@ -146,22 +140,4 @@ body {
 .stat_number {
   font-weight: var(--bold-folt-weight);
   font-size: var(var(--name-and-stats-font-size));
-}
-
-.background-circle-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: var(--background-circle-radius);
-  height: var(--background-circle-radius);
-  transform: translate(-50%, -50%);
-}
-
-.background-circle-bottom {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: var(--background-circle-radius);
-  height: var(--background-circle-radius);
-  transform: translate(50%, 50%);
 }
